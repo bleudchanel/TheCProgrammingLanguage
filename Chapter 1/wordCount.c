@@ -19,5 +19,5 @@ int main(){
       ++nw;
     } 
   }
-  printf("%d %d %d\n", nl, nw, nc);
+  printf("%d lines  %d words  %d  characters \n", nl, nw, nc);
 }

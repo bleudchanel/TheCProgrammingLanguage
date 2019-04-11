@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define WORDCOUNT 10
+#define WORDCOUNT 1000 //A high upper bound
 #define IN 1
 #define OUT 0
 
@@ -29,12 +29,14 @@ int main(){
     } 
   }
   printf("Word count: %d \n", nw);
-  for(int i = 0; i < WORDCOUNT; ++i){
-    printf("Word %d :", i);
-    for(int j = 0; j < histo[i]; ++j){
-      printf("|");
-    }
-    printf("\n");
+  for(int i = 0; i < nw; ++i){
+    //if(histo[i] > 0){
+      printf("Word %4d :", i);
+      for(int j = 0; j < histo[i]; ++j){
+        printf("|");
+      }
+      printf("\n");
+    //}
   }
 
 \
